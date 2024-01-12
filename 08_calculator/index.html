@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const add = function(a, b) {
+	return a + b;
+};
+
+const subtract = function(a, b) {
+	return a - b;
+};
+
+const sum = function([...n]) {
+    let numbers = [...n];
+    let summary = numbers.reduce((a, b) => a + b, 0);
+    console.log(numbers);
+    console.log(summary);
+};
+
+const multiply = function([...n]) {
+    let multipliers = [...n];
+    let product = multipliers.reduce((a, b) => a * b);
+    console.log(product);
+};
+
+const power = function(a, b) {
+    let multiple = 1;
+    for (i = 0; i < b; i++){
+        multiple *= a;
+        console.log(multiple);
+    }
+};
+
+function factorialize(a) {
+    let stop = 1;
+    for (i = 1; i <= a; i++){
+        stop *= i;
+    }
+	console.log(stop);
+};
+
+factorialize(5);
+    </script>
+</body>
+</html>
